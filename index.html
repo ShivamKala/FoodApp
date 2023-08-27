@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/fast-food.png" />
+    <title>Favourite Food App</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@300&display=swap");
+      /* HTML Body reset */
+      * {
+        border: 0;
+        margin: 0;
+      }
+      body {
+        background: rgb(217, 239, 244);
+        background: linear-gradient(
+          90deg,
+          rgba(217, 239, 244, 1) 0%,
+          rgba(255, 255, 255, 1) 53%,
+          rgba(243, 212, 242, 1) 100%
+        );
+        font-family: "Poppins", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Navbar styling - start */
+      nav {
+        background-color: #6155b4;
+        padding: 15px;
+      }
+
+      ul {
+        padding-left: 0;
+      }
+      ul li {
+        display: inline-block;
+      }
+
+      ul li a:hover {
+        background-color: #32234847;
+      }
+
+      ul li a {
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 800;
+        padding: 15px;
+        color: white;
+      }
+
+      /* Nabar styling - end */
+
+      /* food list styling start */
+      .food-list {
+        margin: 15px 20px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        margin-left: 5px;
+      }
+      ol {
+        padding: 0;
+      }
+      ol li {
+        list-style-type: none;
+        margin: 20px;
+      }
+
+      ol li:nth-of-type(1) {
+        list-style-image: url(./images/biryani.png);
+        list-style-position: inside;
+      }
+      ol li:nth-of-type(2) {
+        list-style-image: url(./images/cake.png);
+        list-style-position: inside;
+      }
+      ol li:nth-of-type(3) {
+        list-style-image: url(./images/pizza.png);
+        list-style-position: inside;
+      }
+      ol li:nth-of-type(4) {
+        list-style-image: url(./images/burger.png);
+        list-style-position: inside;
+      }
+      ol li:nth-of-type(5) {
+        list-style-image: url(./images/ice-cream.png);
+        list-style-position: inside;
+      }
+      ol li a {
+        font-size: large;
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+      }
+      /* food list syling end */
+
+      /* image section - start */
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2%;
+      }
+      .img-wrapper {
+        width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        /* margin-top: 30px; */
+      }
+
+      .img-wrapper p {
+        text-align: center;
+        margin: 10px;
+        font-weight: 600;
+      }
+      /* image section end */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar - start -->
+      <nav>
+        <ul>
+          <li><a href="#foodlist">Index</a></li>
+          <li><a href="#foodimg">Food</a></li>
+          <li>
+            <a href="https://en.wikipedia.org/wiki/Food" target="_blank"
+              >About</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Navbar -end -->
+      <!-- Food List Start -->
+      <section id="foodlist" class="food-list">
+        <h1>Top 5 Favourites food</h1>
+        <ol>
+          <li><a href="#Biryani">Biryani</a></li>
+          <li><a href="#Cake">Cake</a></li>
+          <li><a href="#Pizza">Pizza</a></li>
+          <li><a href="#Burger">Burger</a></li>
+          <li><a href="#Ice_cream">Ice Cream</a></li>
+        </ol>
+      </section>
+      <!-- Food List end -->
+      <!-- Image section start -->
+      <section id="foodimg" class="food-img">
+        <div id="Biryani" class="img-wrapper">
+          <img src="./images/_Hyderabadi_Dum_Biryani_.jpg" alt="Biryani" />
+          <p>Biryani</p>
+        </div>
+        <!--  -->
+        <div id="Cake" class="img-wrapper">
+          <img src="./images/classic-belgian-chocolate-cake.jpg" alt="cake" />
+          <p>Cake</p>
+        </div>
+        <!--  -->
+        <div id="Pizza" class="img-wrapper">
+          <img
+            src="./images/top-view-pepperoni-pizza-with-mushroom-sausages-bell-pepper-olive-corn-black-wooden_141793-2158.avif"
+            alt="Pizza"
+          />
+          <p>Pizza</p>
+        </div>
+        <!--  -->
+        <div id="Burger" class="img-wrapper">
+          <img
+            src="./images/photo-1571091718767-18b5b1457add.jfif"
+            alt="Burger"
+          />
+          <p>Burger</p>
+        </div>
+        <!--  -->
+        <div id="Ice_cream" class="img-wrapper">
+          <img
+            src="./images/61b31c9d289e22335b6753b2_Ice Cream 2.jpg"
+            alt="Ice cream"
+          />
+          <p>Ice cream</p>
+        </div>
+        <!--  -->
+      </section>
+      <!-- Image section end -->
+    </div>
+  </body>
+</html>
